@@ -1,0 +1,112 @@
+.prices__title {
+    margin: 0 auto;
+  }
+  
+  .prices__container {
+    padding: 16px;
+    padding-bottom: 40px;
+  }
+  
+  @media (min-width: 768px) {
+    .prices__container {
+      padding: 30px 24px 47px;
+    }
+  }
+  
+  @media (min-width: 1120px) {
+    .prices__container {
+      padding: 30px 32px 47px;
+    }
+  }
+  
+  .prices__check {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .prices__check {
+      display: grid;
+      grid-template-columns: 57% 13% 35%;
+      padding-left: 20px;
+      margin-bottom: 16px;
+      color: var(--color-backup);
+      line-height: 16px;
+    }
+  }
+  
+  .prices__swiper {
+    height: 250px;
+    padding-bottom: 40px;
+  }
+  
+  @media (min-width: 768px) {
+    .prices__swiper {
+      height: auto;
+      padding-bottom: 24px;
+    }
+  }
+  
+  @media (min-width: 768px) {
+    .prices__list {
+      display: flex;
+      flex-direction: column;
+      border-radius: 6px;
+      background-color: var(--white);
+    }
+  }
+  
+  .prices__card {
+    box-sizing: border-box;
+    border: 1px solid #eaeaea;
+    border-radius: 6px;
+    background-color: var(--color-btn);
+    position: relative;
+    padding: 16px;
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    .prices__card {
+      width: 100% !important;
+      padding: 23px 16px;
+      border: none;
+      border-radius: 0px;
+    }
+  
+    .prices__card::after {
+      content: "";
+      width: calc(100% - 32px);
+      height: 1px;
+      top: 100%;
+      border-bottom: 1px solid var(--border--slide);
+      position: absolute;
+    }
+  
+    .prices__card:last-child:after {
+      content: "";
+      top: 0;
+    }
+  }
+  .prices__text {
+    margin: 0;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+    max-width: 420px;
+  }
+  .prices__link {
+    position: relative;
+    font-size: 16px;
+    text-decoration: none;
+    color: var(--color-primary);
+    font-weight: 600;
+    transition: 0.5s all ease;
+  }
+  
+  .prices__link::after {
+    content: url(../../img/birdline.svg);
+    color: var(--color-rose);
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 10px;
+  }
+  

@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+	.picture {
+		flex-basis: 50%;
+	}
+	.picture__img {
+		border-radius: 6px;
+	}
+}
+.picture__img {
+	width: 100%;
+	height: auto;
+}

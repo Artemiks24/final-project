@@ -1,0 +1,36 @@
+.button {
+	cursor: pointer;
+	position: relative;
+	border: none;
+	background-color: #ff3e79;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	transition: 1s ease;
+	&:hover {
+		opacity: 0.6;
+		background-color: var(--line--before);
+	}
+}
+.button__img {
+	position: absolute;
+	margin: auto;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+}
+@media (min-width: 768px) {
+	.button--after {
+		position: relative;
+		&::after {
+			content: " ";
+			background: var(--border--slide);
+			width: 2px;
+			height: 32px;
+			top: 5px;
+			right: -15px;
+			position: absolute;
+		}
+	}
+}

@@ -1,0 +1,49 @@
+@import url(./mixins/fonts.scss);
+@import url(./mixins/normalize.scss);
+@import url(./mixins/hover.scss);
+@import url(./mixins/blur.scss);
+@import url(./mixins/rose.scss);
+@import url(./mixins/pagination.scss);
+@import url(./mixins/form.scss);
+@import url(./mixins/menu.scss);
+@import url(./mixins/order.scss);
+@import url(./mixins/show-button.scss);
+@import url(./mixins/title.scss);
+@import url(./mixins/colors.scss);
+@import url(./mixins/container.scss);
+@import url(./mixins/button-reset.scss);
+@import url(./mixins/link-reset.scss);
+@import url(./mixins/list-reset.scss);
+@import url(./mixins/logo.scss);
+@import url(./mixins/button.scss);
+@import url(./blocks/header.scss);
+@import url(./blocks/aside.scss);
+@import url(./blocks/wrapper.scss);
+@import url(./blocks/about.scss);
+@import url(./blocks/brands.scss);
+@import url(./blocks/call.scss);
+@import url(./blocks/card.scss);
+@import url(./blocks/contacts.scss);
+@import url(./blocks/feedback.scss);
+@import url(./blocks/footer.scss);
+@import url(./blocks/info.scss);
+@import url(./blocks/languages.scss);
+@import url(./blocks/main.scss);
+@import url(./blocks/paragraph.scss);
+@import url(./blocks/picture.scss);
+@import url(./blocks/prices.scss);
+@import url(./blocks/repair.scss);
+@import url(./blocks/service-menu.scss);
+@import url(./blocks/sidebar.scss);
+@import url(./blocks/status.scss);
+
+
+html {
+	box-sizing: border-box;
+}
+*, *::after, *::before {
+	box-sizing: inherit;
+}
+body {
+	font-family: 'TT Lakes';
+}

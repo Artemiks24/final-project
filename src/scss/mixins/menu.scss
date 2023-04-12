@@ -1,0 +1,24 @@
+.menu {
+	display: flex;
+	flex-direction: column;
+}
+.menu__item {
+	position: relative;
+}
+.menu__link {
+	transition: 0.5s ease;
+	font-weight: 600;
+}
+
+.menu__link--checked {
+	color: var(--color-backup);
+	&::before {
+		content: " ";
+		background: var( --line--before);
+		width: 3px;
+		height: 24px;
+		left: -25px;
+		border-radius: 25%;
+		position: absolute;
+	}
+}

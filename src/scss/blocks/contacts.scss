@@ -1,0 +1,14 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+.contacts__phone {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 32px;
+	transition: 1s all ease;
+}
+.contacts__mail {
+	transition: 1s all ease;
+}

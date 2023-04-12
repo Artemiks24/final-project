@@ -1,0 +1,26 @@
+.show-button {
+	display: none;
+	&:hover {
+		transform: scale(1.1);
+	}
+	&::before {
+		content: url(../../img/arrow.svg);
+		margin-right: 20px;
+	}
+}
+.show-button--transform {
+	&::before {
+		content: url(../../img/reverse-arrow.svg);
+		margin-right: 20px;
+	}
+}
+@media (min-width: 768px) {
+	.show-button {
+		display: block;
+		cursor: pointer;
+		font-weight: 600;
+		letter-spacing: -0.2px;
+		transition: 0.2s all ease;
+		color: var( --color-primary);
+	}
+}

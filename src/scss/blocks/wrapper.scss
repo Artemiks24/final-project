@@ -1,0 +1,10 @@
+.wrapper {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+@media (min-width: 1440px) {
+	.wrapper {
+		display: grid;
+		grid-template-columns: 320px 1120px;
+	}
+}

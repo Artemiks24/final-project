@@ -1,0 +1,71 @@
+.brands__title {
+	margin: 0 auto;
+}
+.brands__container {
+	margin: 0 auto;
+	max-width: 1120px;
+	padding: 16px 16px 24px;
+	background: var(--color-bg);
+}
+.brands__swiper {
+	height: 100px;
+	padding-bottom: 40px;
+}
+
+.brands__card {
+	box-sizing: border-box;
+	position: relative;
+	display: flex;
+	flex-basis: 240px;
+	padding: 11px 16px;
+	background: var( --white);
+	border: 1px solid var(--border--slide);
+	border-radius: 6px;
+	align-items: center;
+	transition: 0.5s all ease;
+	&::after {
+		content: url(../../img/arrow-btn.svg);
+		position: absolute;
+		right: 16px;
+	}
+}
+.brands__button {
+	margin-left: 10px;
+}
+@media (min-width: 768px) {
+	.brands__container {
+		padding: 24px 24px 32px;
+	}
+	.brands__swiper {
+		height: 170px;
+		overflow: hidden;
+		padding-bottom: 0;
+	}
+	.brands__card {
+		flex-basis: 224px;
+		flex-grow: 1;
+		height: 72px;
+	}
+	.brands__list {
+		display: flex;
+		gap: 16px 24px;
+		flex-wrap: wrap;
+		margin-bottom: 24px;
+	}
+}
+@media (min-width: 1120px) {
+	.brands__container {
+		padding: 24px 32px 50px;
+	}
+	.brands__card {
+		flex-basis: 240px;
+	}
+	.brands__list {
+		gap: 16px 32px;
+	}
+}
+
+.brands__swiper--transform {
+	height: auto;
+	overflow: visible;
+}

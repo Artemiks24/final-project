@@ -1,0 +1,9 @@
+.swiper-pagination {
+	--swiper-pagination-bullet-size: 10px;
+	--swiper-pagination-color: var(--color-backup);
+}
+@media (min-width: 768px) {
+	.swiper-pagination {
+		display: none;
+	}
+}

@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+	.info {
+		display: flex;
+		justify-content: space-between;
+		gap: 48px;
+	}
+	.info__text {
+		flex-basis: 50%;
+	}
+}
+@media (min-width: 1120px) {
+	.info {
+		gap: 36px;
+	}
+}
