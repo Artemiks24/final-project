@@ -730,6 +730,9 @@ template {
 	.wrapper {
 		display: grid;
 		grid-template-columns: 320px 1120px;
+		grid-template-areas: 
+		'sidebar main'
+		'sidebar footer'
 	}
 }
 .about__container {
@@ -1067,6 +1070,7 @@ template {
 	font-size: 14px;
 }
 .main {
+	grid-area: main;
 	transition: all 1s ease;
 }
 .paragraph {
@@ -1314,6 +1318,7 @@ template {
     .sidebar {
       display: block;
       padding: 30px 24px;
+      grid-area: sidebar;
     }
   }
   
