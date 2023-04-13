@@ -6,5 +6,8 @@
 	.wrapper {
 		display: grid;
 		grid-template-columns: 320px 1120px;
+		grid-template-areas: 
+		'sidebar main'
+		'sidebar footer'
 	}
 }

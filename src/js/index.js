@@ -1,19 +1,9 @@
 import '../scss/style.scss'
-import { showMoreText } from './show-hide.js'
-import { showBrandsCards } from './show-hide.js'
-import { showRepairsCards } from './show-hide.js'
-import { asideTranslate } from './interactive.js'
-import { callTranslate } from './interactive.js'
-import { feedbackTranslate } from './interactive.js'
-import { mainTranslate } from './interactive.js'
-import { swiperStart } from './sliders.js'
+import { showMore } from './show-hide.js'
+import { translate } from './interactive.js'
+import { swiperStart } from './sliders'
 
-showMoreText()
-showBrandsCards()
-showRepairsCards()
-asideTranslate()
-callTranslate()
-feedbackTranslate()
-mainTranslate()
 swiperStart()
+translate()
+showMore()
 
