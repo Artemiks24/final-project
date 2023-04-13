@@ -41,7 +41,6 @@ export function translate() {
       main.classList.add('blur')
     }
     if (e.target.closest('.button--hide-call')) {
-      if (!e.target) return
       call.classList.remove('call--translate')
       aside.classList.remove('blur')
       main.classList.remove('blur')
