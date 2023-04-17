@@ -54,8 +54,8 @@
                    <img class="button__img" src="./img/button-icons/search.svg" alt="поиск">
                </button>  
         </header>
-           <nav class="nav aside__nav">
-           <ul class="menu list-reset aside__menu">
+           <nav class="menu aside__nav">
+           <ul class="menu-list list-reset aside__menu">
                <li class="menu__item"><a class="menu__link link-reset menu__link--checked hover" href="#">Ремонт техники</a></li>
                <li class="menu__item"><a class="menu__link link-reset hover" href="#">Услуги и сервисы</a></li>
                <li class="menu__item"><a class="menu__link link-reset hover" href="#">Корпоративным клиентам</a></li>
@@ -101,39 +101,6 @@
                </ul>
            </footer>
        </div>
-      <div class="feedback">
-        <button class="button feedback__button button--hide-feedback">
-          <img class="button__img" src="./img/button-icons/back.svg" alt="закрыть">
-        </button>
-        <form class="form feedback__form" action="#" name="feedback">
-          <h3 class="form__name">Обратная связь</h3>
-          <input class="form__field" type="text" id="name" placeholder="Имя" required>
-          <input class="form__field" type="tel" id="phone" placeholder="Телефон" required>
-          <input class="form__field" type="email" id="email" placeholder="Электронная почта" required>
-          <textarea class="form__field" name="sms" id="sms" placeholder="Сообщение" cols="30" rows="5"></textarea>
-          <p class="form__text">
-            Нажимая “отправить”, вы даете согласие на
-            <span class="rose">обработку персональных данных</span> и соглашаетесь
-            с нашей <span class="rose">политикой конфиденциальности</span>
-          </p>
-          <button class="order form__button">ОТПРАВИТЬ</button>
-        </form>
-      </div>
-      <div class="call">
-        <button class="button feedback__button button--hide-call">
-          <img class="button__img" src="./img/button-icons/back.svg" alt="закрыть">
-        </button>
-        <form class="form call__form" action="#" name="call">
-          <h3 class="form__name">Заказать Звонок</h3>
-          <input class="form__field" type="tel" id="call" placeholder="Телефон" required>
-          <p class="form__text">
-            Нажимая “отправить”, вы даете согласие на
-            <span class="rose">обработку персональных данных</span> и соглашаетесь
-            с нашей <span class="rose">политикой конфиденциальности</span>
-          </p>
-          <button class="order form__button">ОТПРАВИТЬ</button>
-        </form>
-      </div>
       <aside class="sidebar">
         <header class="sidebar__header">
           <a class="logo sidebar__logo" href="#"><img class="logo__img" src="./img/logo.svg" alt="логотип"></a>
@@ -141,8 +108,8 @@
             <img class="button__img" src="./img/button-icons/search.svg" alt="поиск">
           </button>
         </header>
-        <nav class="nav sidebar__nav">
-          <ul class="menu list-reset sidebar__menu">
+        <nav class="menu sidebar__nav">
+          <ul class="menu-list list-reset sidebar__menu">
             <li class="menu__item">
               <a class="menu__link link-reset hover" href="#">Ремонт техники</a>
             </li>
@@ -224,7 +191,7 @@
                 </li>
               </ul>
             </header>
-            <nav class="nav about__nav">
+            <nav class="service about__nav">
               <ul class="service-menu list-reset">
                 <li class="service-menu__item service-menu__item--checked">
                   <a class="service-menu__link link-reset" href="#">Ремонтируемые бренды</a>
@@ -248,7 +215,7 @@
             </nav>
             <div class="info">
               <div class="info__text">
-                <p class="paragraph">
+                <p class="paragraph info__paragraph">
                   Мы являемся авторизованным сервисным центром по ремонту
                   техники Dell. Только у нас вы можете отремонтировать свой
                   ноутбук Dell с официальной гарантией производителя.
@@ -408,7 +375,6 @@
             <a class="prices__link hover" href="#">Получить коммерческое предложение</a>
           </div>
         </section>
-
       </main>
       <footer class="footer">
         <div class="container footer__container">
@@ -417,6 +383,39 @@
           <a class="footer__link hover" href="#">Информация, размещенная на данной странице, не является публичной офертой</a>
         </div>
       </footer>
+      <div class="feedback">
+        <button class="button feedback__button button--hide-feedback">
+          <img class="button__img" src="./img/button-icons/back.svg" alt="закрыть">
+        </button>
+        <form class="form feedback__form" action="#" name="feedback">
+          <h3 class="form__name">Обратная связь</h3>
+          <input class="form__field" type="text" id="name" placeholder="Имя" required>
+          <input class="form__field" type="tel" id="phone" placeholder="Телефон" required>
+          <input class="form__field" type="email" id="email" placeholder="Электронная почта" required>
+          <textarea class="form__field" name="sms" id="sms" placeholder="Сообщение" cols="30" rows="5"></textarea>
+          <p class="form__text">
+            Нажимая “отправить”, вы даете согласие на
+            <span class="rose">обработку персональных данных</span> и соглашаетесь
+            с нашей <span class="rose">политикой конфиденциальности</span>
+          </p>
+          <button class="order form__button">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+      <div class="call">
+        <button class="button feedback__button button--hide-call">
+          <img class="button__img" src="./img/button-icons/back.svg" alt="закрыть">
+        </button>
+        <form class="form call__form" action="#" name="call">
+          <h3 class="form__name">Заказать Звонок</h3>
+          <input class="form__field" type="tel" id="call" placeholder="Телефон" required>
+          <p class="form__text">
+            Нажимая “отправить”, вы даете согласие на
+            <span class="rose">обработку персональных данных</span> и соглашаетесь
+            с нашей <span class="rose">политикой конфиденциальности</span>
+          </p>
+          <button class="order form__button">ОТПРАВИТЬ</button>
+        </form>
+      </div>
     </div>
    <script type="text/javascript" src="./js/bundle.js"></script></body> 
 </html>
