@@ -67,6 +67,7 @@ export function translate() {
 export function escTranslate() {
   document.addEventListener ('keydown', (e) => {
     if(e.keyCode === 27) {
+      aside.classList.remove('aside--translate')
       call.classList.remove('call--translate')
       feedback.classList.remove('feedback--translate')
       sections.forEach((e) => e.classList.remove('blur'))
