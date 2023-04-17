@@ -26,7 +26,7 @@
   @media (min-width: 768px) {
     .prices__check {
       display: grid;
-      grid-template-columns: 57% 13% 35%;
+      grid-template-columns: 57% 13% 30%;
       padding-left: 20px;
       margin-bottom: 16px;
       color: var(--color-backup);
@@ -59,7 +59,7 @@
     box-sizing: border-box;
     border: 1px solid #eaeaea;
     border-radius: 6px;
-    background-color: var(--color-btn);
+    background-color: var(--white);
     position: relative;
     padding: 16px;
     font-size: 14px;

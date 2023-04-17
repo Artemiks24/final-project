@@ -7,6 +7,7 @@
 	height: 40px;
 	border-radius: 50%;
 	transition: 1s ease;
+	outline-color: var(--color-border);
 	&:hover {
 		opacity: 0.6;
 		background-color: var(--line--before);

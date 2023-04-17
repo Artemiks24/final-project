@@ -1,3 +1,22 @@
+.info__paragraph {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.info__button {
+	display: block;
+	cursor: pointer;
+	font-weight: 600;
+	letter-spacing: -0.2px;
+	transition: 0.2s all ease;
+	color: var( --color-primary);
+}
+
+.info__text {
+	margin-bottom: 20px;
+}
+
+
 @media (min-width: 768px) {
 	.info {
 		display: flex;
