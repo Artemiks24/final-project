@@ -371,7 +371,7 @@ template {
 	}
 }
 .blur {
-	opacity: 0.04;
+	filter: blur(10px);
 }
 .rose {
 	color: var(--color-rose);
@@ -423,6 +423,7 @@ template {
 	color: var(--color-backup);
 }
 .form__button {
+	width: 134px;
 	margin-left: auto;
 }
 @media (min-width: 768px) {
@@ -436,7 +437,7 @@ template {
 		}
 	}
 }
-.menu {
+.menu-list {
 	display: flex;
 	flex-direction: column;
 }
@@ -461,7 +462,6 @@ template {
 	}
 }
 .order {
-	width: 120px;
 	height: 32px;
 	background: var(--color-rose);
 	color: var(--white);
@@ -469,18 +469,20 @@ template {
 	font-weight: bold;
 	line-height: 24px;
 	border-radius: 16px;
+	padding: 0 16px;
 	border: none;
 	position: relative;
 	cursor: pointer;
 	transition: 1s ease;
 	text-transform: uppercase;
+	text-align: left;
 	&:hover {
 		opacity: 0.6;
 		background-color: var(--line--before);
 	}
 	&::after {
 		content: url(./static/submit-arrow.svg);
-		margin-left: 8px;
+		margin-left: 12px;
 		position: absolute;
 	}
 }
@@ -537,6 +539,7 @@ template {
 	--line--before: #41f6d7;
 	--border--slide: #eaeaea;
 	--white: #ffffff;
+	--shadow-aside: rgba(14, 24, 80, 0.2);
 }
 .container {
 	max-width: 1120px;
@@ -590,6 +593,7 @@ template {
 	height: 40px;
 	border-radius: 50%;
 	transition: 1s ease;
+	outline-color: var(--color-border);
 	&:hover {
 		opacity: 0.6;
 		background-color: var(--line--before);
@@ -671,12 +675,13 @@ template {
 	position: absolute;
 	top: 0;
 	left: -300%;
-	height: 100%;
+	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	padding: 18px 24px 32px;
 	color: var(--color-primary);
 	background-color: var(--white);
+	box-shadow: 10px 0px 12px var(--shadow-aside);
 	font-size: 16px;
 	line-height: 24px;
 	transition: all 0.5s ease;
@@ -718,13 +723,14 @@ template {
 		width: 320px;
 	}
 	.aside__menu {
-		margin-bottom: 268px;
+		margin-bottom: 170px;
 		gap: 32px;
 	}
 }
 .wrapper {
 	max-width: 1440px;
 	margin: 0 auto;
+	overflow: auto;
 }
 @media (min-width: 1440px) {
 	.wrapper {
@@ -890,14 +896,14 @@ template {
 	overflow: visible;
 }
 .call {
-	position: absolute;
+	position: fixed;
 	top: 0;
-	right: 100%;
+	right: -100%;
 	background: var(--white);
 	transition: all 0.5s ease;
 	padding: 24px 16px 0px;
 	min-height: 100vh;
-	box-shadow: 0px 0px 5px var(--border-window);
+	box-shadow: -8px 0px 20px var(--border-window);
 }
 .call--translate {
 	z-index: 11;
@@ -919,6 +925,7 @@ template {
 }
 .card__button {
 	position: absolute;
+	width: 120px;
 	bottom: 20px;
 	right: 10px;
 }
@@ -958,14 +965,14 @@ template {
 	transition: 1s all ease;
 }
 .feedback {
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 100%;
+    right: -100%;
     background: var(--white);
     transition: all 0.5s ease;
     padding: 24px 16px 0px;
     min-height: 100vh;
-    box-shadow: 0px 0px 5px var(--border-window);
+    box-shadow: -8px 0px 20px var(--border-window);
   }
   
   .feedback--translate {
@@ -1049,6 +1056,25 @@ template {
       text-align: right;
     }
   }
+.info__paragraph {
+	margin: 0;
+	margin-bottom: 20px;
+}
+
+.info__button {
+	display: block;
+	cursor: pointer;
+	font-weight: 600;
+	letter-spacing: -0.2px;
+	transition: 0.2s all ease;
+	color: var( --color-primary);
+}
+
+.info__text {
+	margin-bottom: 20px;
+}
+
+
 @media (min-width: 768px) {
 	.info {
 		display: flex;
@@ -1074,8 +1100,6 @@ template {
 	transition: all 1s ease;
 }
 .paragraph {
-	margin: 0;
-	margin-bottom: 20px;
 	font-size: 14px;
 	line-height: 18px;
 	overflow: hidden;
@@ -1125,7 +1149,7 @@ template {
   @media (min-width: 768px) {
     .prices__check {
       display: grid;
-      grid-template-columns: 57% 13% 35%;
+      grid-template-columns: 57% 13% 30%;
       padding-left: 20px;
       margin-bottom: 16px;
       color: var(--color-backup);
@@ -1158,7 +1182,7 @@ template {
     box-sizing: border-box;
     border: 1px solid #eaeaea;
     border-radius: 6px;
-    background-color: var(--color-btn);
+    background-color: var(--white);
     position: relative;
     padding: 16px;
     font-size: 14px;
