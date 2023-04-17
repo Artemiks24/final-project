@@ -1343,6 +1343,7 @@ template {
       display: block;
       padding: 30px 24px;
       grid-area: sidebar;
+      background-color: var(--white);
     }
   }
   
@@ -1398,7 +1399,8 @@ html {
   box-sizing: inherit; }
 
 body {
-  font-family: 'TT Lakes'; }
+  font-family: 'TT Lakes';
+  background: #F2F2F2; }
 
 
 /*# sourceMappingURL=style.css.map*/
